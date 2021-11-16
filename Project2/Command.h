@@ -14,9 +14,7 @@ public:
 	void RemovePizza(int idx);
 	void PrintPizza();
 	//string GetLowestPricePizza();
-	//ostream& operator<<(ostream& out);
-	//friend ifstream& operator >> (ifstream& fin, Pizza& other); // читання даних з файлу
-	//ostream& operator>>(ostream& in);
+	
 	
 	
 };

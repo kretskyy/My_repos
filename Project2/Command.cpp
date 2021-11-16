@@ -1,4 +1,5 @@
 #include"Repository.h"
+#include"PizzaRepository.h"
 #include"Command.h"
 #include"Pizza.h"
 #include"Error.h"
@@ -28,11 +29,11 @@ void Command::PrintPizza()
 	pizzaRepository.Print();
 }
 
-/*string Command::GetLowestPricePizza()
+string Command::GetLowestPricePizza()
 {
 	//to do:implement correct logic
 	//return pizzas[0].GetLowestPrice();
-}*/
+}
 
 /*ostream& Command::operator<<(ostream& out)
 {

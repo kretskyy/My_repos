@@ -10,6 +10,10 @@ protected:
 	string GetFileName() { return "Pizza.txt"; }
 	string GetTitle() { return "Pizza: "; }
 public:
-	PizzaRepository(int max) : Repository(max){}
+	PizzaRepository(int max) : Repository(max)
+	{
+		
+	}
 	~PizzaRepository() {WriteToFile();}
+	
 };
