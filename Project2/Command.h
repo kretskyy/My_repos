@@ -13,7 +13,7 @@ public:
 	void AddPizza(Pizza& pizza);
 	void RemovePizza(int idx);
 	void PrintPizza();
-	//string GetLowestPricePizza();
+	//string GetLowestPrice();
 	
 	
 	

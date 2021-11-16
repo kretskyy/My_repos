@@ -15,7 +15,6 @@ private:
 public:
 	Pizza(string name = "", int size = 0, int pieces_num = 0);
 	string ToString();
-	string GetLowestPrice();
 	int PizzaValue(string name, int size, int pieces_num);
 	friend ofstream& operator << (ofstream& fout, Pizza& other); // запис даних у файл
 	//ostream& operator<<(ostream& out);

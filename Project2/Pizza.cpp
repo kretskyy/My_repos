@@ -26,11 +26,6 @@ string Pizza::ToString()
 	return "Pizza: " + name + " " + to_string(size) + " " + to_string(pieces_num) + " " + to_string(value);
 }
 
-string Pizza::GetLowestPrice()
-{
-	return name;
-}
-
 ofstream& operator << (ofstream& fout, Pizza& pizza)
 {
 	fout << pizza.name << " " << pizza.size << " " << pizza.pieces_num << " " << pizza.value << endl;

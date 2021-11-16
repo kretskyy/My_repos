@@ -29,11 +29,11 @@ void Command::PrintPizza()
 	pizzaRepository.Print();
 }
 
-string Command::GetLowestPricePizza()
+/*string command::getlowestprice()
 {
 	//to do:implement correct logic
-	//return pizzas[0].GetLowestPrice();
-}
+	//return pizzas[0].getlowestprice();
+}*/
 
 /*ostream& Command::operator<<(ostream& out)
 {
