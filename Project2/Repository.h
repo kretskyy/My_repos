@@ -57,6 +57,15 @@ public:
 			filein >> line;
 		}
 	}
+	void operator+(T& pizza)
+	{
+		Add(pizza);
+	}
+
+	/*void operator-(T& pizza)
+	{
+		Remove(pizza);
+	}*/
 
 protected:
 	virtual string GetTitle() { return ""; }

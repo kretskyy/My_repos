@@ -31,3 +31,8 @@ ofstream& operator << (ofstream& fout, Pizza& pizza)
 	fout << pizza.name << " " << pizza.size << " " << pizza.pieces_num << " " << pizza.value << endl;
 	return fout;
 }
+
+ostream& Pizza::operator<<(ostream& out)
+{
+	return out<< name << " " << size << " " << pieces_num << " " << value << endl;
+}

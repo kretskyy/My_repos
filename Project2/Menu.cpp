@@ -38,7 +38,8 @@ void Menu::showAndHandleAddPizzaMenu()
 	cin >> pieces_num;
 
 	Pizza pizza(name, size, pieces_num);
-	command.AddPizza(pizza);
+	command + pizza;
+	//command.AddPizza(pizza);
 	cout << "Pizza Added!!!\n";
 }
 

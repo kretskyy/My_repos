@@ -14,9 +14,8 @@ public:
 	void RemovePizza(int idx);
 	void PrintPizza();
 	//string GetLowestPrice();
-	
-	
-	
+	void operator+(Pizza& pizza);
+	//void operator-(Pizza& pizza);
 };
 
 #endif // !COMMAND_H
