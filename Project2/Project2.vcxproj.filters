@@ -38,9 +38,6 @@
     <ClCompile Include="Pizza.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
-      <Filter>Файлы ресурсов</Filter>
-    </ClCompile>
     <ClCompile Include="Command.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -50,10 +47,13 @@
     <ClCompile Include="Error.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Pizza.txt">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Файлы ресурсов</Filter>
     </Text>
   </ItemGroup>
 </Project>

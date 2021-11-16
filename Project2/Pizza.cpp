@@ -1,7 +1,6 @@
 #include"Pizza.h"
 #include"Error.h"
 #include<string>
-#include<iostream>
 #include<fstream>
 using namespace std;
 
@@ -32,7 +31,29 @@ ofstream& operator << (ofstream& fout, Pizza& pizza)
 	return fout;
 }
 
-ostream& Pizza::operator<<(ostream& out)
+/*ostream& Pizza::operator<<(ostream& out)
 {
 	return out<< name << " " << size << " " << pieces_num << " " << value << endl;
+}*/
+
+ifstream& operator>>(ifstream& fin, Pizza& pizza)
+{
+	int max = 100;
+	char* buff = new char[max + 1];
+
+	fin.get(buff, max, ',');
+	pizza.name = buff;
+	fin.get();
+
+	fin.getline(buff, max);
+	pizza.size = atoi(buff);
+
+	fin.getline(buff, max);
+	pizza.pieces_num = atoi(buff);
+
+	fin.getline(buff, max);
+	pizza.value = atoi(buff);
+
+	delete[] buff;
+	return fin;
 }

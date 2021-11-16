@@ -1,6 +1,5 @@
 #include "Menu.h"
 #include"Pizza.h"
-#include"Command.h"
 #include"Error.h"
 #include<iostream>
 #include<string>
@@ -38,8 +37,8 @@ void Menu::showAndHandleAddPizzaMenu()
 	cin >> pieces_num;
 
 	Pizza pizza(name, size, pieces_num);
-	command + pizza;
-	//command.AddPizza(pizza);
+	
+	command.AddPizza(pizza); //command + pizza;
 	cout << "Pizza Added!!!\n";
 }
 
@@ -49,7 +48,7 @@ void Menu::showAndHandleRemovePizzaMenu()
 	cout << "Type pizza ID:\n";
 	cin >> idx;
 
-	command.RemovePizza(idx);
+	command.RemovePizza(idx); //command - idx;
 	cout << "Pizza Removed!!!\n";
 }
 

@@ -12,8 +12,11 @@ protected:
 public:
 	PizzaRepository(int max) : Repository(max)
 	{
-		
+		ReadFromFile();
 	}
-	~PizzaRepository() {WriteToFile();}
+	~PizzaRepository() 
+	{
+		WriteToFile();
+	}
 	
 };
