@@ -75,7 +75,9 @@ protected:
 		ofstream fout(GetFileName());
 		for (int i = 0; i < currentCapacity; i++)
 		{
-			fout << entities[i] << endl;
+			fout << entities[i];
+			if (i + 1 != currentCapacity)
+				fout << endl;
 
 		}
 		fout.close(); 
