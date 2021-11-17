@@ -27,9 +27,7 @@ string Pizza::ToString()
 
 ofstream& operator << (ofstream& fout, Pizza& pizza)
 {
-	//fout << pizza.name << " " << pizza.size << " " << pizza.pieces_num << " " << pizza.value << endl;
-	//return fout;
-	fout << pizza.ToString();
+	fout << pizza.name << " " << pizza.size << " " << pizza.pieces_num << " " << pizza.value << endl;
 	return fout;
 }
 
