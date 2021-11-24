@@ -19,9 +19,7 @@ void Menu::ShowMenu()
 void Menu::showMainMenu()
 {
 	cout << "Welcome to pizzeria 'Shablezubyk'!!!\nPlease select an option:\n";
-	cout << "1 - Add new pizza;\n";
-	cout << "2 - Print pizza;\n";
-	cout << "3 - Remove pizza;\n";
+	cout << "1 - Print pizza;\n";
 	//cout << "4 - Get pizza with the lowest price;\n";
 	cout << "0 - Exit.\n";
 }
