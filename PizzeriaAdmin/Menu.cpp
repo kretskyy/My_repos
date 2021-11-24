@@ -37,7 +37,7 @@ void Menu::showAndHandleAddPizzaMenu()
 	cin >> pieces_num;
 
 	Pizza pizza(name, size, pieces_num);
-	
+
 	command.AddPizza(pizza); //command + pizza;
 	cout << "Pizza Added!!!\n";
 }
@@ -72,23 +72,23 @@ void Menu::handleUserInput(char userInput)
 {
 	switch (userInput)
 	{
-		case '1':
-			showAndHandleAddPizzaMenu();
-			break;
-		case '2':
-			command.PrintPizza();
-			cout << endl;
-			break;
-		case '3':
-			showAndHandleRemovePizzaMenu();
-			break;
+	case '1':
+		showAndHandleAddPizzaMenu();
+		break;
+	case '2':
+		command.PrintPizza();
+		cout << endl;
+		break;
+	case '3':
+		showAndHandleRemovePizzaMenu();
+		break;
 		/*case '4':
 			cout << "Pizza with the lowest price is: " << command.GetLowestPricePizza() << endl;
 			break;*/
-		case '0':
-			break;
-		default:
-			cout << "Invalid command entered!!!\n";
-			break;
+	case '0':
+		break;
+	default:
+		cout << "Invalid command entered!!!\n";
+		break;
 	}
 }
