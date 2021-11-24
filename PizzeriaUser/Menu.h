@@ -9,8 +9,6 @@ public:
 private:
 	Command command;
 	void showMainMenu();
-	void showAndHandleAddPizzaMenu();
-	void showAndHandleRemovePizzaMenu();
 	void handleUserInput(char userInput);
 	void safeHandleUserInput(char userInput);
 };
