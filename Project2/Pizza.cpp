@@ -22,7 +22,7 @@ int Pizza::PizzaValue(string name, int size, int pieces_num)
 
 string Pizza::ToString()
 {
-	return "Pizza: " + name + " " + to_string(size) + " " + to_string(pieces_num) + " " + to_string(value);
+	return "Pizza: " + name + " " + to_string(size) + " " + to_string(pieces_num) + " " + to_string(PizzaValue(name, size, pieces_num));
 }
 
 ofstream& operator << (ofstream& fout, Pizza& pizza)
