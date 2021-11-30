@@ -1,5 +1,6 @@
 #pragma once
 #include"Error.h"
+#include"Pizza.h"
 #include<iostream>  
 #include<fstream>
 using namespace std;
