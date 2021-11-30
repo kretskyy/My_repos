@@ -61,7 +61,7 @@ public:
 	{
 		SyncRead();
 		cout << GetTitle() << endl;
-		for (int i = 0; i < size; i++)
+		for (int i = 0; i < currentCapacity; i++)
 		{
 			cout << i << "--" << entities[i].ToString() << endl;
 			//cout << i << "--" << "Pizza:" << entities[i] << endl;
