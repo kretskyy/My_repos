@@ -12,7 +12,7 @@ Pizza::Pizza(string name, int size, int pieces_num)
 	if (size * pieces_num * 25 < 0)
 		throw Error(ErrorCode::NegativeValue);
 
-	value = size * pieces_num * 25;
+	this->value = size * pieces_num * 25;
 }
 
 int Pizza::PizzaValue(string name, int size, int pieces_num)
@@ -22,7 +22,7 @@ int Pizza::PizzaValue(string name, int size, int pieces_num)
 
 string Pizza::ToString()
 {
-	return "Pizza: " + name + "," + to_string(size) + "," + to_string(pieces_num) + "," + to_string(value);
+	return "Pizza: " + name + " " + to_string(size) + " " + to_string(pieces_num) + " " + to_string(value);
 }
 
 ofstream& operator << (ofstream& fout, Pizza& pizza)
