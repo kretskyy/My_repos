@@ -25,16 +25,16 @@ string Pizza::ToString()
 	return "Pizza: " + name + " " + to_string(size) + " " + to_string(pieces_num) + " " + to_string(value);
 }
 
-//ofstream& operator << (ofstream& fout, Pizza& pizza)
-//{
-//	fout << pizza.name << " " << pizza.size << " " << pizza.pieces_num << " " << pizza.value << endl;
-//	return fout;
-//}
-
-ostream& Pizza::operator<<(ostream& out)
+ofstream& operator << (ofstream& fout, Pizza& pizza)
 {
-	return out<< name << " " << size << " " << pieces_num << " " << value << endl;
+	fout << pizza.name << " " << pizza.size << " " << pizza.pieces_num << " " << pizza.value << endl;
+	return fout;
 }
+
+//ostream& Pizza::operator<<(ostream& out)
+//{
+//	return out<< name << " " << size << " " << pieces_num << " " << value << endl;
+//}
 
 ifstream& operator>>(ifstream& fin, Pizza& pizza)
 {
